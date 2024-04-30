@@ -1,0 +1,10 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
+
+@media(max-width: 991px){
+    .sidebar{
+        background-color: rgb(172,175,234);
+        backdrop-filter: blur(10px);
+    }
+}

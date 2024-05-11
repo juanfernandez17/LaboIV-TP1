@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sala de juegos | LOGIN</title>
+</head>
+<body>
+  <!-- Main container -->
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+
+  <!-- Login container -->
+  <div class="row border rounded-5 p-3 bg-dark shadow box-area align-items-center justify-content-center">
+
+  <!-- Left box -->
+  <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background-image: url(../assets/gifRegistro.gif); width: 400px; height: 400px; background-position: center; background-size: cover;">
+  </div>
+
+  <!-- Right box -->
+  <div class="col-md-6 right-box ">
+    <div class="row align-items-center">
+      <div class="header-text mb-4">
+        <h3 class="text-center text-white">Crear cuenta</h3>
+        <p class="login-text text-center text-white" style="font-size: 20px;">Por favor, ingrese los datos correspondientes para crear su cuenta. </p>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" [(ngModel)]="newUserMail" class="form-control form-control-lg gb-light fs-6" placeholder="Correo electrónico">
+      </div>
+      <div class="input-group mb-1">
+        <input type="password" [(ngModel)]="newUserPWD" class="form-control form-control-lg gb-light fs-6" placeholder="Constraseña">
+      </div>     
+      <div class="input-group mb-3">
+        <button (click)="Register()" class="btn btn-lg w-100 fs-6 text-white mt-5" style="background-color: rgb(60, 179, 113);">Registrarse</button>
+      </div>
+      <div class="row">
+        <small class="text-white">¿Ya tiene una cuenta creada?<a (click)='goTo("login")' href="login">  Iniciar sesión</a></small>
+      </div>
+    </div>
+
+  </div>
+
+    </div>
+  </div>
+</body>
+</html>

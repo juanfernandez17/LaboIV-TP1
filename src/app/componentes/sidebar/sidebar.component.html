@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg" style="background-color: rgb(172,175,234);">
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(0, 0, 68);">
     <div class="container">
       <!-- Logo-->
       <a class="navbar-brand fs-4 text-white" href="#">Sala de juegos</a>
@@ -17,19 +17,31 @@
         <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
           <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
             <li class="nav-item mx-2">
-              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              <a (click)="goTo('home')"class="nav-link active text-white" aria-current="page" href="home">Home</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link text-white" href="#quiensoy">Quién soy</a>
+              <a (click)="goTo('chat')"class="nav-link text-white" href="chat">Chat</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link text-white" href="#chat">Chat</a>
+              <a  (click)="goTo('about')"class="nav-link text-white" href="about">About me</a>
             </li> 
           </ul>
           <!-- Login/Logout/Sing up -->
-          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 fs-6">
-            <a href="#login" class="text-white text-decoration-none px-3 py-1 rounded-4" style="background-color: rgb(96, 227, 96);">Login</a>
+          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center text-center  gap-3 fs-6">
+            <a (click)="goTo('login')" href="login" id="btnLogin" class="text-white text-decoration-none px-3 py-1 rounded-4" style="background-color: rgb(60, 179, 113);">Cerrar sesión</a>
           </div>
+          <!--@if (isLogged())
+          {
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center text-center  gap-3 fs-6">
+              <a (click)="goTo('login')" href="login" id="btnLogin" class="text-white text-decoration-none px-3 py-1 rounded-4" style="background-color: rgb(60, 179, 113);">Cerrar sesión</a>
+            </div>
+          } 
+          @else 
+          {
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center text-center  gap-3 fs-6">
+              <a (click)="goTo('login')" href="login" id="btnLogin" class="text-white text-decoration-none px-3 py-1 rounded-4" style="background-color: rgb(60, 179, 113);">Iniciar sesión</a>
+            </div>
+          }-->
         </div>
       </div>
     </div>

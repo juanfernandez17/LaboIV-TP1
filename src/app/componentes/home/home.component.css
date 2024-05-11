@@ -1,5 +1,14 @@
-.container{
-    background-image: url("../../../assets/609668.jpg");
-    background-position: center;
-    background-size: cover;
+#cardsContainer{
+    
+    background-repeat: repeat;
 }
+
+#idSidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Ajusta este valor si es necesario */
+    
+}
+
